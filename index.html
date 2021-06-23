@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mr.ZhengGang's Blog - 我的个人博客</title><meta name="keywords" content="HPC,超算,软件,个人技术博客,高性能计算,技术文档,学习,用户手册等技术文章"><meta name="author" content="Zheng Gang"><meta name="copyright" content="Zheng Gang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="专注超级计算领域的技术分享">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mr.ZhengGang&#39;s Blog">
+<meta property="og:url" content="http://blog.mrzhenggang.com/index.html">
+<meta property="og:site_name" content="Mr.ZhengGang&#39;s Blog">
+<meta property="og:description" content="专注超级计算领域的技术分享">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/avatar/avatar.png">
+<meta property="article:author" content="Zheng Gang">
+<meta property="article:tag" content="HPC,超算,软件,个人技术博客,高性能计算,技术文档,学习,用户手册等技术文章">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/avatar/avatar.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/favicon/favicon.ico"><link rel="canonical" href="http://blog.mrzhenggang.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Mr.ZhengGang\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-06-23 23:51:15'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/avatar/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">55</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">18</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/course/"><i class="fa-fw fas fa-cubes"></i><span> 课程</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Mr.ZhengGang's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/course/"><i class="fa-fw fas fa-cubes"></i><span> 课程</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Mr.ZhengGang's Blog</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/mrzhenggang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:mrzhenggang@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/beast-install-windows/" title="BEAST安装使用教程（Windows版）">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="BEAST安装使用教程（Windows版）"></a></div><div class="recent-post-info"><a class="article-title" href="/beast-install-windows/" title="BEAST安装使用教程（Windows版）">BEAST安装使用教程（Windows版）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-28T00:00:00.000Z" title="发表于 2020-04-28 08:00:00">2020-04-28</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/">应用软件</a></span></div><div class="content">简介BEAST 2是用于分子序列的贝叶斯系统发生分析的跨平台程序。它使用严格或宽松的分子时钟模型来估计有根的，经过时间测量的系统发育。
+
+
+它可以用作重建系统发育的方法，但它也是测试进化假设的框架，而无需以单个树形拓扑为条件。BEAST 2使用马尔可夫链蒙特卡罗（MCMC）在树空间上求平均，因此每棵树的权重均与其后验概率成正比。BEAST 2包括用于设置标准分析的图形用户界面和用于分析结果的一套程序。
+官网：http://www.beast2.org/
+下载beast官网下载地址：http://www.beast2.org/
+
+
+
+
+
+建议下载带java的版本，如果windows本地已有java环境，下载非java版本即可。
+
+解压缩使用解压缩工具解压缩BEAST_with_JRE.v2.6.2.Windows.zip即可，比如我们解压到了D盘，目录为D:\BEAST
+配置Java在windows下配置Java，就是设置系统环境变量即可，相关教程很多，下面还是赘述一下：
+1.在开始菜单找到编辑系统环境变量
+
+
+2.选择环境变量
+
+
+
+
+
+
+3.在系统变量部分选择新建
+
+
+4.输入变量名 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/vpn-login-linux64/" title="如何使用linux64位系统登录天河VPN">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何使用linux64位系统登录天河VPN"></a></div><div class="recent-post-info"><a class="article-title" href="/vpn-login-linux64/" title="如何使用linux64位系统登录天河VPN">如何使用linux64位系统登录天河VPN</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-22T00:00:00.000Z" title="发表于 2020-04-22 08:00:00">2020-04-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/VPN/">VPN</a></span></div><div class="content">安装运行 VPN 所需的 32 位库安装32位库的命令安装运行 VPN 所需的 32 位库，不同操作系统对应的命令有所不同，具体如下（需要切换为 root 权限）
+CentOS 7 和 Redhat 712yum install glibc.i686yum install libstdc++-4.8.5-4.el7.i686
+
+Fedora 22 workstation123yum install glibc.i686yum install libstdc++-4.8.5-4.el7.i686yum install libstdc++.so.6
+
+Ubuntu 16 和 Debian 81apt-get install lib32stdc++6
+
+
+
+ubuntu16.04系统安装VPN所需的32位库
+您的浏览器不支持 video 标签。
+
+
+
+
+安装VPN脚本安装VPN脚本命令用户联系天河的技术支持专员获取install_vpn_linux_x86.sh脚本，并自行拷贝到本地所使用的Linux系统中。然后执行如下安装命令即可（需要切换为 root 权限）
+12chmod +x ins ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/set-environment-variables/" title="如何设置环境变量">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何设置环境变量"></a></div><div class="recent-post-info"><a class="article-title" href="/set-environment-variables/" title="如何设置环境变量">如何设置环境变量</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-21T00:00:00.000Z" title="发表于 2020-04-21 08:00:00">2020-04-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">环境变量</a></span></div><div class="content">什么是环境变量？
+变量是计算机系统用于保存可变值的数据类型，我们可以直接通过变量名称来提取到对应的变量值。
+在 Linux 系统中，环境变量是用来定义系统运行环境的一些参数，比如每个用户不同的家目录（HOME）、可执行程序搜索路径（PATH）等。
+值得一提的是，Linux 系统中环境变量的名称一般都是大写的，这是一种约定俗成的规范。
+
+如何显示系统的环境变量？
+我们可以使用 env 命令来查看到 Linux 系统中所有的环境变量
+
+
+您的浏览器不支持 video 标签。
+
+
+
+
+我们可以使用 echo $变量名 来显示指定环境变量，例如echo $PATH
+
+
+您的浏览器不支持 video 标签。
+
+
+常见系统环境变量有哪些？
+
+
+环境变量名称
+作用
+
+
+
+PATH
+定义命令行解释器搜索用户执行命令的路径
+
+
+LD_LIBRARY_PATH
+定义命令行解释器搜索用户执行命令所链接的动态库搜索路径
+
+
+HOME
+用户的主目录（也称家目录）
+
+
+C_INCLUDE_PATH
+编译程序使C语言头文件的搜索路径
+
+
+CXX_INCLUDE_PATH
+编译程序时C++语言头文件的搜索路径
+
+
+如 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/keep-alive/" title="如何保持VPN永久在线和SSH连接活跃">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何保持VPN永久在线和SSH连接活跃"></a></div><div class="recent-post-info"><a class="article-title" href="/keep-alive/" title="如何保持VPN永久在线和SSH连接活跃">如何保持VPN永久在线和SSH连接活跃</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-19T00:00:00.000Z" title="发表于 2020-04-19 08:00:00">2020-04-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/VPN/">VPN</a></span></div><div class="content">为什么会断线我们通过EasyConnect建立VPN链接，当长时间没有操作的时候，由于保护机制，VPN会自动下线。这与网页登录邮箱长时间不操作就提示重新登录的原理是一样的。
+如何保持VPN永久在线鼠标右键单击任务栏的EasyConnect的图标，在弹出的页面中选择系统设置，然后勾选永久在线。
+
+这样就不会因为长时间不操作，由于保护机制而断开连接了。
+
+
+
+
+如何保持SSH连接活跃使用ssh连接远程服务器的时候，如果长时间没有操作，远程连接就有可能中断。正在执行的程序和vim等缓冲区数据都会丢失。
+windows系统
+使用MobaXterm连接远程服务器，在settings -&gt; Configuration 的 SSH 选项卡中，勾选SSH keepalive。 
+使用SecureCRT连接远程服务器，在会话选项 -&gt; 终端设置中勾选发送协议 NO-OP。
+使用putty连接远程服务器，找到Connection -&gt; Seconds between keepalives ( 0 to turn off )， 默认为0，改为60。
+使用xshell连接远程服务器，找到当前 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/website-update-20200418/" title="网站更新说明 2020年4月18日">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网站更新说明 2020年4月18日"></a></div><div class="recent-post-info"><a class="article-title" href="/website-update-20200418/" title="网站更新说明 2020年4月18日">网站更新说明 2020年4月18日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-18T00:00:00.000Z" title="发表于 2020-04-18 08:00:00">2020-04-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a></span></div><div class="content">网站更新说明本blog网站更新了，从hexo-next主题更新为hexo-melody主题，更新主要原因是之前我对hexo-next主题进行了源码修改，未知原因导致网站访问速度很慢，甚至部分用户反馈打不开。因此，本周末更新此网站，重新建站。
+目前使用的环境为：
+
+域名和DNS：从 阿里云万网 购买com域名，使用阿里云管理控制台的云解析DNS进行DNS解析。需要实名认证。
+代码托管：使用 (coding)[https://coding.net] 建立代码仓库，并发布为静态网址
+网站代码：使用hexo框架，使用 melody 主题，主题配置方法为 theme-config
+文章：使用Markdown语法编写，教程可以参考 Markdown教程
+CDN：使用 github 建立CDN仓库，使用 jsdelivr 实现CDN支持
+
+对建站感兴趣的朋友，可以自己试试。
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/nciplot-install/" title="nciplot安装说明">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="nciplot安装说明"></a></div><div class="recent-post-info"><a class="article-title" href="/nciplot-install/" title="nciplot安装说明">nciplot安装说明</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-03-29T16:00:00.000Z" title="发表于 2020-03-30 00:00:00">2020-03-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/">应用软件</a></span></div><div class="content">nciplot安装使用说明nciplot 3.0  2020.03.30 by zhenggang
+简介web : https://www.lct.jussieu.fr/pagesperso/contrera/nciplot.html
+src : https://www.lct.jussieu.fr/pagesperso/contrera/nciplot-3.0.tar.gz 102MB
+doc : https://www.lct.jussieu.fr/pagesperso/contrera/nciplot-manual.pdf
+
+
+
+
+编译通过阅读压缩包中的README文件，了解如何编译它。
+123456tar zxvf nciplot-3.0.tar.gzcd nciplot-3.0cd srcsed -i &quot;s/FCFLAGS = -O2 -fopenmp/FCFLAGS = -O3 -fopenmp/&quot; Makefile.incmake mrpropermake
+
+
+
+说明：
+
+ Makefile.inc文件用来指定编译器和编译参数是，默认是gfortran ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/editor-enhancements-for-use-with-NCL-scripts/" title="设置编辑器语法高亮支持NCL">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设置编辑器语法高亮支持NCL"></a></div><div class="recent-post-info"><a class="article-title" href="/editor-enhancements-for-use-with-NCL-scripts/" title="设置编辑器语法高亮支持NCL">设置编辑器语法高亮支持NCL</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-03-25T00:00:00.000Z" title="发表于 2020-03-25 08:00:00">2020-03-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/">工具软件</a></span></div><div class="content">设置编辑器语法高亮支持NCL官方说明Editor enhancements for use with NCL scripts
+http://www.ncl.ucar.edu/Applications/editor.shtml
+英文好的朋友直接看就行了
+支持如下编辑器：
+
+Atom
+Aquamacs
+Emacs
+JED
+gedit
+Kate
+NEdit
+NetBeans
+Notepad++
+Sublime Text
+TextMate
+TextWrangler
+vi/vim
+
+
+
+
+
+实践举例vim对于vim的支持也有好多版本，我们选择https://github.com/xiexinyls/vim，下载压缩包。vim-master.zip，配置步骤如下：
+
+下载压缩包 vim-master.zip
+上传到系统用户根目录
+解压缩：unzip vim-master.zip
+创建文件夹mkdir ~/.vim, 
+将刚刚解压缩的内容拷贝到文件夹中：cp -rf  vim-master/* ~/.vim
+配置 ~/.vimrc 文件
+
+
+如果之前不存在该文件，则直接执行拷贝命令即可：cp ./v ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/how-to-use-wrf/" title="如何使用WRF">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何使用WRF"></a></div><div class="recent-post-info"><a class="article-title" href="/how-to-use-wrf/" title="如何使用WRF">如何使用WRF</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-03-25T00:00:00.000Z" title="发表于 2020-03-25 08:00:00">2020-03-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/">应用软件</a></span></div><div class="content">WRF简介官方主页：https://www.mmm.ucar.edu/weather-research-and-forecasting-model
+WRF为美国国家大气研究中心(NCAR)联合其他机构共同开发的中尺度气象模式，可用于天气预报业务和大气科学领域相关科研。
+WRF分为ARW(Advanced Research WRF) 和 NMM(Nonhydrostatic Mesoscale Model)两种。绝大多数气象领域的研究者使用的主要都是ARW版本。
+
+前处理：WPS （仅real case需要）
+观测资料同化：WRFDA (Data Assimilation)
+Nudging: OBSGRID
+后处理：ARWpost等格式转换、插值及绘图软件
+nco : 针对nc格式文件的处理套件，可方便地进行裁剪、做差、统计分析
+
+
+
+
+
+调用系统已安装版本可以通过 module avail wrf 来搜索系统已经安装的WRF版本，例如3.8,3.9.1,4.0,4.1等，可以直接加载使用。
+系统已经配置了常用的地形数据库，目录为：/THL6/software/WRFDATA/geog
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/how-to-change-password/" title="如何修改系统密码">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何修改系统密码"></a></div><div class="recent-post-info"><a class="article-title" href="/how-to-change-password/" title="如何修改系统密码">如何修改系统密码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-02-24T00:00:00.000Z" title="发表于 2020-02-24 08:00:00">2020-02-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AF%86%E7%A0%81/">密码</a></span></div><div class="content">用户密码管理
+用户在使用天河系统的时候，需要使用SSH工具连接到系统的登陆节点，输入系统账号和登录密码。
+登陆密码建议定期更换（系统每过一段时间会强制要求更换，快到期时登陆系统后会有英文提示）。
+用户可以使用password密码修改密码。
+
+
+
+
+
+如何修改密码能够正常登陆，主动修改密码当出现用户密码快要过期的提示时，建议用户主动修改密码。修改密码的方法很简单，只需要以下几步：
+
+登陆系统
+输入修改密码命令：password
+输入一次旧密码（注意：输入密码时，并没有显示已经输入的内容，这是一种保护机制，不是输不进去）
+然后再输入两次新密码（注意：密码要求一定的安全强度，比如数字、字母、符号都要有，要满足一定的长度，不能和用户名太相似等等，如果输入后未通过，请阅读英文提示即可）
+重新用新密码登录
+
+举例：
+1234567[zhenggang@ln2 ~]$ passwd Changing password for user zhenggang. Enter login(LDAP) password:    # 注意：在输入原始账号密码或新密码时，系统都不会显示输入的字符New passw ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/user-conference-training-materials-20191115/" title="国家超级计算天津中心用户培训资料下载20191115">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="国家超级计算天津中心用户培训资料下载20191115"></a></div><div class="recent-post-info"><a class="article-title" href="/user-conference-training-materials-20191115/" title="国家超级计算天津中心用户培训资料下载20191115">国家超级计算天津中心用户培训资料下载20191115</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-15T00:00:00.000Z" title="发表于 2019-11-15 08:00:00">2019-11-15</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%9F%B9%E8%AE%AD/">培训</a></span></div><div class="content">大家好！非常感谢大家来参加本次的培训会，下面的资料是此次培训会的报告pdf，请大家下载学习，如有问题，欢迎来信交流。
+
+资料下载有效期 30 天，同时注意请不要用于商业用途。
+
+
+
+1. 在线阅读PDF
+中心介绍及天河系列超级计算机介绍  
+Linux使用操作入门培训
+天河系列超级计算机入门使用培训
+HPC云使用操作培训
+IO优化案例详解
+MPI并行编程入门培训
+
+2. 一键下载压缩包
+国家超级计算天津中心用户培训资料下载20191115.zip
+
+3. 免费试用您可以填写相关申请表发送给我们，详见网址首页导航栏。
+联系方式：
+
+高性能计算部&ensp;（科研类用户）&ensp;郑刚&ensp;&ensp; &#x7a;&#x68;&#101;&#110;&#x67;&#x67;&#97;&#x6e;&#103;&#64;&#110;&#115;&#99;&#x63;&#x2d;&#x74;&#x6a;&#x2e;&#99;&#110;
+企业服务部&ensp;&ensp;&ensp;（企业用户）&ensp;&ensp;&ensp;张婷&ensp;&ensp; &#x7a;&#104;& ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/#content-inner">6</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/avatar/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Zheng Gang</div><div class="author-info__description">专注超级计算领域的技术分享</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">55</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">18</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/mrzhenggang"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/mrzhenggang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:mrzhenggang@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">网站刚更新完成, 待完善哈!</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/beast-install-windows/" title="BEAST安装使用教程（Windows版）"><img src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="BEAST安装使用教程（Windows版）"/></a><div class="content"><a class="title" href="/beast-install-windows/" title="BEAST安装使用教程（Windows版）">BEAST安装使用教程（Windows版）</a><time datetime="2020-04-28T00:00:00.000Z" title="发表于 2020-04-28 08:00:00">2020-04-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/vpn-login-linux64/" title="如何使用linux64位系统登录天河VPN"><img src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何使用linux64位系统登录天河VPN"/></a><div class="content"><a class="title" href="/vpn-login-linux64/" title="如何使用linux64位系统登录天河VPN">如何使用linux64位系统登录天河VPN</a><time datetime="2020-04-22T00:00:00.000Z" title="发表于 2020-04-22 08:00:00">2020-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/set-environment-variables/" title="如何设置环境变量"><img src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何设置环境变量"/></a><div class="content"><a class="title" href="/set-environment-variables/" title="如何设置环境变量">如何设置环境变量</a><time datetime="2020-04-21T00:00:00.000Z" title="发表于 2020-04-21 08:00:00">2020-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/keep-alive/" title="如何保持VPN永久在线和SSH连接活跃"><img src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何保持VPN永久在线和SSH连接活跃"/></a><div class="content"><a class="title" href="/keep-alive/" title="如何保持VPN永久在线和SSH连接活跃">如何保持VPN永久在线和SSH连接活跃</a><time datetime="2020-04-19T00:00:00.000Z" title="发表于 2020-04-19 08:00:00">2020-04-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/website-update-20200418/" title="网站更新说明 2020年4月18日"><img src="https://cdn.jsdelivr.net/gh/mrzhenggang/CDN@master/background/background-melody-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网站更新说明 2020年4月18日"/></a><div class="content"><a class="title" href="/website-update-20200418/" title="网站更新说明 2020年4月18日">网站更新说明 2020年4月18日</a><time datetime="2020-04-18T00:00:00.000Z" title="发表于 2020-04-18 08:00:00">2020-04-18</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/R/"><span class="card-category-list-name">R</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/VPN/"><span class="card-category-list-name">VPN</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/python/"><span class="card-category-list-name">python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BD%9C%E4%B8%9A%E8%B0%83%E5%BA%A6/"><span class="card-category-list-name">作业调度</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8F%AF%E8%A7%86%E5%8C%96%E8%BD%AF%E4%BB%B6/"><span class="card-category-list-name">可视化软件</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%95%86%E4%B8%9A%E8%BD%AF%E4%BB%B6/"><span class="card-category-list-name">商业软件</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%9F%B9%E8%AE%AD/"><span class="card-category-list-name">培训</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%98%E5%82%A8/"><span class="card-category-list-name">存储</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Materials-Studio/" style="font-size: 1.1em; color: #999">Materials Studio</a> <a href="/tags/NCL/" style="font-size: 1.1em; color: #999">NCL</a> <a href="/tags/R/" style="font-size: 1.23em; color: #999ea6">R</a> <a href="/tags/VPN/" style="font-size: 1.1em; color: #999">VPN</a> <a href="/tags/WRF/" style="font-size: 1.1em; color: #999">WRF</a> <a href="/tags/anaconda/" style="font-size: 1.1em; color: #999">anaconda</a> <a href="/tags/angsd/" style="font-size: 1.1em; color: #999">angsd</a> <a href="/tags/arm/" style="font-size: 1.1em; color: #999">arm</a> <a href="/tags/beast/" style="font-size: 1.23em; color: #999ea6">beast</a> <a href="/tags/berkeleygw/" style="font-size: 1.1em; color: #999">berkeleygw</a> <a href="/tags/citrix/" style="font-size: 1.1em; color: #999">citrix</a> <a href="/tags/collectl/" style="font-size: 1.23em; color: #999ea6">collectl</a> <a href="/tags/command/" style="font-size: 1.1em; color: #999">command</a> <a href="/tags/compile/" style="font-size: 1.1em; color: #999">compile</a> <a href="/tags/comsol/" style="font-size: 1.1em; color: #999">comsol</a> <a href="/tags/cp2k/" style="font-size: 1.1em; color: #999">cp2k</a> <a href="/tags/fftw/" style="font-size: 1.1em; color: #999">fftw</a> <a href="/tags/gcc/" style="font-size: 1.1em; color: #999">gcc</a> <a href="/tags/gromacs/" style="font-size: 1.1em; color: #999">gromacs</a> <a href="/tags/history/" style="font-size: 1.1em; color: #999">history</a> <a href="/tags/hpc%E4%BA%91/" style="font-size: 1.1em; color: #999">hpc云</a> <a href="/tags/jfeff/" style="font-size: 1.1em; color: #999">jfeff</a> <a href="/tags/lammps/" style="font-size: 1.23em; color: #999ea6">lammps</a> <a href="/tags/linux/" style="font-size: 1.23em; color: #999ea6">linux</a> <a href="/tags/mobaxerm/" style="font-size: 1.1em; color: #999">mobaxerm</a> <a href="/tags/module/" style="font-size: 1.1em; color: #999">module</a> <a href="/tags/molpro/" style="font-size: 1.1em; color: #999">molpro</a> <a href="/tags/mpi/" style="font-size: 1.23em; color: #999ea6">mpi</a> <a href="/tags/namd/" style="font-size: 1.1em; color: #999">namd</a> <a href="/tags/nciplot/" style="font-size: 1.1em; color: #999">nciplot</a> <a href="/tags/ovito/" style="font-size: 1.1em; color: #999">ovito</a> <a href="/tags/plumed/" style="font-size: 1.1em; color: #999">plumed</a> <a href="/tags/python/" style="font-size: 1.37em; color: #99a4b2">python</a> <a href="/tags/quota/" style="font-size: 1.1em; color: #999">quota</a> <a href="/tags/sftp/" style="font-size: 1.1em; color: #999">sftp</a> <a href="/tags/shell/" style="font-size: 1.1em; color: #999">shell</a> <a href="/tags/slurm/" style="font-size: 1.5em; color: #99a9bf">slurm</a> <a href="/tags/ssh/" style="font-size: 1.1em; color: #999">ssh</a> <a href="/tags/storage/" style="font-size: 1.1em; color: #999">storage</a> <a href="/tags/swash/" style="font-size: 1.1em; color: #999">swash</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/02/"><span class="card-archive-list-date">二月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/11/"><span class="card-archive-list-date">十一月 2019</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/10/"><span class="card-archive-list-date">十月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/08/"><span class="card-archive-list-date">八月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/07/"><span class="card-archive-list-date">七月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/06/"><span class="card-archive-list-date">六月 2019</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">55</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2015-02-01T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-06-23T15:51:15.127Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2015 - 2021 By Zheng Gang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/">津ICP备17007036号-1</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
