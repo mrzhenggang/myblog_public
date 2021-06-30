@@ -51,7 +51,6 @@ window.addEventListener('load', () => {
             title: item.querySelector('title').textContent,
             content: item.querySelector('content').textContent,
             url: item.querySelector('url').textContent
-            // url: item.querySelector('url').textContent
           }
         })
 
@@ -72,8 +71,6 @@ window.addEventListener('load', () => {
             let dataTitle = data.title.trim().toLowerCase()
             const dataContent = data.content.trim().replace(/<[^>]+>/g, '').toLowerCase()
             const dataUrl = data.url.startsWith('/') ? data.url : GLOBAL_CONFIG.root + data.url
-            // const dataUrl = data.url.startsWith('/') ? GLOBAL_CONFIG.root  + data.url : GLOBAL_CONFIG.root + data.url
-            // const dataUrl = data.url.startsWith('/') ?  'https://blog.mrzhenggang.com/' + data.url : 'https://blog.mrzhenggang.com/' + GLOBAL_CONFIG.root + data.url
             let indexTitle = -1
             let indexContent = -1
             let firstOccur = -1
