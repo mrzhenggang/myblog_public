@@ -127,10 +127,10 @@ window.addEventListener('load', () => {
                 })
 
                 // str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
-                // str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
-                const newdataUrl = data.url.slice(2, data.url.length) 
+                str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
+                // const newdataUrl = data.url.slice(2, data.url.length) 
                 // dataUrl = data.url.startsWith('/') ? data.url.slice(2, data.url.length) : GLOBAL_CONFIG.root + data.url
-                str += '<div class="local-search__hit-item"><a href="https://blog.mrzhenggang.com/' + newdataUrl + '" class="search-result-title">' + dataTitle + '</a>'
+                // str += '<div class="local-search__hit-item"><a href="https://blog.mrzhenggang.com/' + newdataUrl + '" class="search-result-title">' + dataTitle + '</a>'
                 count += 1
 
                 if (dataContent !== '') {
