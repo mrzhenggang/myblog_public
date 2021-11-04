@@ -47,11 +47,11 @@ window.addEventListener('load', () => {
       .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
       .then(data => {
         const datas = [...data.querySelectorAll('entry')].map(function (item) {
+          const content = item.querySelector('content')
           return {
             title: item.querySelector('title').textContent,
-            content: item.querySelector('content').textContent,
+            content: content ? content.textContent : '',
             url: item.querySelector('url').textContent
-            // url: item.querySelector('url').textContent
           }
         })
 
@@ -72,8 +72,6 @@ window.addEventListener('load', () => {
             let dataTitle = data.title.trim().toLowerCase()
             const dataContent = data.content.trim().replace(/<[^>]+>/g, '').toLowerCase()
             const dataUrl = data.url.startsWith('/') ? data.url : GLOBAL_CONFIG.root + data.url
-            // const dataUrl = data.url.startsWith('/') ? GLOBAL_CONFIG.root  + data.url : GLOBAL_CONFIG.root + data.url
-            // const dataUrl = data.url.startsWith('/') ?  'https://blog.mrzhenggang.com' + data.url : 'https://blog.mrzhenggang.com' + GLOBAL_CONFIG.root + data.url
             let indexTitle = -1
             let indexContent = -1
             let firstOccur = -1
@@ -126,11 +124,7 @@ window.addEventListener('load', () => {
                   dataTitle = dataTitle.replace(regS, '<span class="search-keyword">' + keyword + '</span>')
                 })
 
-                // str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
                 str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
-                // const newdataUrl = data.url.slice(2, data.url.length) 
-                // dataUrl = data.url.startsWith('/') ? data.url.slice(2, data.url.length) : GLOBAL_CONFIG.root + data.url
-                // str += '<div class="local-search__hit-item"><a href="https://blog.mrzhenggang.com/' + newdataUrl + '" class="search-result-title">' + dataTitle + '</a>'
                 count += 1
 
                 if (dataContent !== '') {
